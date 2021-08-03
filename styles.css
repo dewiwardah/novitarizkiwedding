@@ -184,16 +184,18 @@ ul .active{
 
 /*Tentang Kami*/
 .about-p{
+    display: flex;
     text-align: center;
 	text-transform: lowercase;
 	text-decoration: lightcoral;
 	word-spacing: 10px;
 }
 .about1{
-	position: relative;
+	position: center;
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 }
 
 .about1 .about2{
@@ -201,7 +203,9 @@ ul .active{
 	width: 48%;
 }
 
+
 .titleAbout{
+    display: flex;
 	text-align: center;
 	color: #111;
 	font-size: 5rem;
@@ -209,17 +213,19 @@ ul .active{
 	text-transform: uppercase;
 	text-indent: 20px;
 	line-height: 20px;
-	letter-spacing: 5px;
+	letter-spacing: initial;
 }
 
 .titleAbout span{
 	color: lightpink;
 	font-weight: 700;
 	font-size: 7rem;
+
 }
 
 .about1 .about2 .imgTk{
 	position: relative;
+    display: flex;
 	width: 100%;
 	/*min-height: 300px;*/
 	height: 100%;
@@ -312,13 +318,13 @@ ul .active{
 }
 
 .kontak-info .title-kontak{
-	color: 	#484848;
+	color: 	black;
 	font-size: 5rem;
 }
 
 .information{
 	display: flex;
-	color: #484848;
+	color: black;
 	margin: 0.7rem 0;
 	align-items: center;
 	font-size: 2rem;
@@ -335,6 +341,76 @@ ul .active{
 	font-size: 2rem;
 }
 
+/*footer*/
+footer{
+    background: lightcoral;
+    height: auto;
+    width: 100vw;
+    font-family: "monospace";
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 100%;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.sosials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.sosials li{
+    margin: 0 10px;
+}
+
+.sosials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sosials a i{
+    font-size: 2rem;
+    transition: color .4s ease;
+}
+
+.sosials a:hover{
+    color: #484848;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
 @keyframes fade-in {
 	from{
 		opacity: 0;
